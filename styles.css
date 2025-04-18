@@ -1,0 +1,133 @@
+body {
+    font-family: 'Minecraftia', sans-serif;
+    background-color: #5e5e5e;
+    color: #7cff77;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 105px;
+}
+
+/* Стили для header */
+header {
+    background-color: #2d2d2d;
+    padding: 50px 0;
+    text-align: center;
+    border-bottom: 4px solid #5cd65c;
+}
+
+.server-name {
+    color: #7cff77;
+}
+
+/* Навигация */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Стили для правил */
+.rules-list {
+    counter-reset: rule-counter;
+}
+
+.rules-list li {
+    margin-bottom: 20px;
+    counter-increment: rule-counter;
+    position: relative;
+    padding-left: 50px;
+}
+
+.rules-list li::before {
+    content: counter(rule-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #5cd65c;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Стили для FAQ */
+.faq-item {
+    margin-bottom: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.faq-answer {
+    padding: 15px;
+    background-color: #2a2a2a;
+    display: none;
+}
+
+/* Футер */
+footer {
+    background-color: #222;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        margin: 5px 0;
+    }
+}
+@media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;               
+      align-items: center;
+    }
+    
+    nav li {
+      margin: 5px 0;                       
+    }
+  }
